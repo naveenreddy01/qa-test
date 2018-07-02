@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="1">
+    <test verbose="1" preserve-order="true" name="WebTest">
+        <classes>
+            <class name="org.naic.mfl.se.challenge.WebTest">
+                <methods>
+                    <include name="checkoutTest"/>
+                    <include name="signInTest"/>
+                    <include name="logInTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
